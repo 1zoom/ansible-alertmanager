@@ -49,7 +49,7 @@ PrivateTmp=true
 ProtectHome=true
 ReadWriteDirectories={{ alertmanager_db_dir }}
 RemoveIPC=true
-RestrictSUIDSGID=true
+#RestrictSUIDSGID=true
 
 {% if alertmanager_systemd_version | int >= 232 %}
 PrivateUsers=true
